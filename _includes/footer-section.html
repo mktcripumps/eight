@@ -6,10 +6,8 @@
                 	<aside class="col-md-4">
                    	  <a href="#" class="foot-logo">{{footer.footer-title}}</a>
                       <div class="clearfix"></div>
-                      <p>{{footer.footer-address}}</p>
-             {% endfor %}
-              {% for header in site.data.header-section %}
-                      <ul class="social-media">
+                      <p>{{footer.footer-content}}</p>
+                        <ul class="social-media">
                         	<li><a href="{{footer.facebook}}"><img src="{{site.baseurl}}/images/facebook-01.png" alt=""/></a></li>
                             <li><a href="{{footer.twitter}}"><img src="{{site.baseurl}}/images/twitter-01.png" alt=""/></a></li>
                             <li><a href="{{footer.linkedin}}"><img src="{{site.baseurl}}/images/linkedin-01.png" alt=""/></a></li>
@@ -20,6 +18,8 @@
                     	<h4>Like us on Facebook</h4>
                         <div class="facebook-page"><img src="{{site.baseurl}}/images/{{footer.facebook-image}}" alt=""/></div>
                   	</aside>
+                     {% endfor %}
+                     {% for header in site.data.header-section %}
                     <aside class="col-md-4">
                    	  	<h4>Get in touch</h4>
                         <div class="foot-contact">
